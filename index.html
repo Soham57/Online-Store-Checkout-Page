@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Checkout | Coffee Masters</title>
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <img
+        class="brand-logo"
+        src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+        alt="coffee masters logo"
+      />
+      <h1 class="brand-name">Coffee Masters</h1>
+    </header>
+
+    <section class="bill">
+      <section class="items-list info-card">
+        <h2 class="card-heading">Items</h2>
+        <ul>
+          <li class="item-row">
+            <div class="item-count">1x</div>
+            <div class="item-name">Cappucino</div>
+            <div class="item-cost">$6.00</div>
+            <ul class="item-description list-style">
+              <li>Light Foam</li>
+            </ul>
+          </li>
+
+          <li class="item-row">
+            <div class="item-count">1x</div>
+            <div class="item-name">Cappucino</div>
+            <div class="item-cost">$7.90</div>
+            <ul class="item-description list-style">
+              <li>Almond Milk</li>
+              <li>Double Expresso Shot</li>
+            </ul>
+          </li>
+
+          <li class="item-row">
+            <div class="item-count">1x</div>
+            <div class="item-name">Croissant</div>
+            <div class="item-cost">$5.37</div>
+            <ul class="item-description list-style">
+              <li>Butter</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="order-name info-card">
+        <h2 class="card-heading">Name</h2>
+        <div class="input-group">
+          <label for="order-name" class="input-label">Name for order</label>
+          <input id="order-name" class="checkout-input" />
+        </div>
+      </section>
+      <section class="payment-info info-card">
+        <h2 class="card-heading">Payment</h2>
+
+        <div class="input-group margin-bottom">
+          <label for="Card-num" class="input-label">Card Number</label>
+          <input id="Card-num" class="checkout-input" />
+        </div>
+
+        <div class="input-group">
+          <label for="cvv" class="input-label">CVV number</label>
+          <input id="cvv" class="checkout-input input-size-50" />
+        </div>
+      </section>
+
+      <section class="bill-fields center-list">
+        <ul class="list-style item-gap">
+          <li>Subtotal:</li>
+          <li>Tax:</li>
+          <li>Total:</li>
+        </ul>
+      </section>
+
+      <section class="bill-values center-list">
+        <ul class="list-style item-gap">
+          <li>$19.27</li>
+          <li>$0.96</li>
+          <li>$20.23</li>
+        </ul>
+      </section>
+      <button class="order-btn">Place order</button>
+    </section>
+  </body>
+</html>

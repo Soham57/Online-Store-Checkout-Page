@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.page-header {
+  background-color: #43281c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  gap: 8px;
+}
+.brand-logo {
+  width: 35px;
+}
+
+.brand-name {
+  color: #fefed1;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+}
+
+.page-body {
+  background-color: #eff0ef;
+}
+
+.bill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "items order-name"
+    "items payment"
+    "bill-field bill-value"
+    "orderBtn orderBtn";
+  margin: 50px 30px 50px 30px;
+  column-gap: 60px;
+  row-gap: 40px;
+}
+
+.items-list {
+  grid-area: items;
+}
+
+.order-name {
+  grid-area: order-name;
+}
+
+.payment-info {
+  grid-area: payment;
+}
+
+.info-card {
+  background-color: #eee1d5;
+  border-radius: 10px;
+  padding: 20px 15px;
+  box-shadow: 0 1px 3px rgb(0 0 0 /0.2);
+}
+
+.card-heading {
+  color: #8a6e54;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  margin: 15px 0px;
+}
+
+.input-group {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.checkout-input {
+  border: 2px #ab8969 solid;
+  padding: 8px;
+  border-radius: 25px;
+  width: 100%;
+  background-color: #eee1d5;
+  height: 40px;
+}
+
+.input-label {
+  background-color: #eee1d5;
+  color: #ab8969;
+  font-size: 11px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0px 4px;
+}
+
+.input-size-50 {
+  width: 50%;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.item-count {
+  grid-area: count;
+  font-size: 16px;
+}
+
+.item-name {
+  grid-area: name;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.item-cost {
+  grid-area: cost;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.item-description {
+  grid-area: description;
+}
+
+.bill-fields {
+  grid-area: bill-field;
+}
+
+.bill-values {
+  grid-area: bill-value;
+}
+
+.order-btn {
+  grid-area: orderBtn;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #deb993;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.item-description li {
+  color: #ab8969;
+}
+
+.item-row {
+  display: grid;
+  grid-template-areas:
+    "count name cost"
+    "count description cost";
+  grid-template-columns: min-content auto min-content;
+  font-family: "Source Sans Pro", sans-serif;
+  column-gap: 20px;
+  row-gap: 15px;
+  border-bottom: 3px #ab8969 solid;
+  margin-bottom: 20px;
+}
+.item-row:last-child {
+  border-bottom: none;
+}
+/*line not working*/
+li:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border: 3px border black;
+}
+
+.center-list {
+  display: flex;
+  justify-content: center;
+}
+
+.list-style {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.item-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
